@@ -5942,6 +5942,34 @@ class _SfDateRangePickerState extends State<_SfDateRangePicker>
             )
             .merge(pickerTheme.activeDatesTextStyle)
             .merge(widget.monthCellStyle.textStyle),
+        saturDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(pickerTheme.saturDatesTextStyle)
+            .merge(widget.monthCellStyle.saturDatesTextStyle),
+        sunDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(pickerTheme.sunDatesTextStyle)
+            .merge(widget.monthCellStyle.sunDatesTextStyle),
+        holiDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(pickerTheme.holiDatesTextStyle)
+            .merge(widget.monthCellStyle.holiDatesTextStyle),
+        myholiDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(pickerTheme.myholiDatesTextStyle)
+            .merge(widget.monthCellStyle.myholiDatesTextStyle),
         cellTextStyle: themeData.textTheme.bodyMedium!
             .copyWith(
               color: colorScheme.onSurface.withOpacity(0.87),
