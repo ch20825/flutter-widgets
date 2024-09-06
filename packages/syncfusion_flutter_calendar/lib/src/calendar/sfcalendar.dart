@@ -3915,6 +3915,34 @@ class _SfCalendarState extends State<SfCalendar>
             )
             .merge(calendarThemeData.activeDatesTextStyle)
             .merge(widget.monthViewSettings.monthCellStyle.textStyle),
+        saturDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(calendarThemeData.saturDatesTextStyle)
+            .merge(widget.monthViewSettings.monthCellStyle.saturDatesTextStyle),
+        sunDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(calendarThemeData.sunDatesTextStyle)
+            .merge(widget.monthViewSettings.monthCellStyle.sunDatesTextStyle),
+        holiDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(calendarThemeData.holiDatesTextStyle)
+            .merge(widget.monthViewSettings.monthCellStyle.holiDatesTextStyle),
+        myholiDatesTextStyle: themeData.textTheme.bodyMedium!
+            .copyWith(
+          color: colorScheme.onSurface.withOpacity(0.87),
+          fontSize: 13,
+        )
+            .merge(calendarThemeData.myholiDatesTextStyle)
+            .merge(widget.monthViewSettings.monthCellStyle.myholiDatesTextStyle),
         timeTextStyle: themeData.textTheme.bodySmall!
             .copyWith(
               color: colorScheme.onSurface.withOpacity(0.54),
