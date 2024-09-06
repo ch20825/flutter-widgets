@@ -1118,6 +1118,10 @@ class MonthCellStyle with Diagnosticable {
     this.trailingDatesBackgroundColor,
     this.leadingDatesBackgroundColor,
     this.textStyle,
+    this.saturDatesTextStyle,
+    this.sunDatesTextStyle,
+    this.holiDatesTextStyle,
+    this.myholiDatesTextStyle,
     @Deprecated('Moved the same [todayTextStyle] to SfCalendar class, '
         'use [todayTextStyle] property from SfCalendar class')
     // ignore: deprecated_member_use_from_same_package, deprecated_member_use
@@ -1178,6 +1182,10 @@ class MonthCellStyle with Diagnosticable {
   ///  }
   /// ```
   final TextStyle? textStyle;
+  final TextStyle? saturDatesTextStyle;
+  final TextStyle? sunDatesTextStyle;
+  final TextStyle? holiDatesTextStyle;
+  final TextStyle? myholiDatesTextStyle;
 
   /// The text style for the text in the today cell of [SfCalendar] month view.
   ///
