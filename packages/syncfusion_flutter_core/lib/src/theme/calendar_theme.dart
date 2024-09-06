@@ -121,6 +121,10 @@ class SfCalendarThemeData with Diagnosticable {
       this.agendaDateTextStyle,
       this.timeTextStyle,
       this.activeDatesTextStyle,
+        this.saturDatesTextStyle,
+        this.sunDatesTextStyle,
+        this.holiDatesTextStyle,
+        this.myholiDatesTextStyle,
       this.activeDatesBackgroundColor,
       this.todayBackgroundColor,
       this.trailingDatesBackgroundColor,
@@ -162,6 +166,10 @@ class SfCalendarThemeData with Diagnosticable {
     TextStyle? viewHeaderDayTextStyle,
     TextStyle? timeTextStyle,
     TextStyle? activeDatesTextStyle,
+    TextStyle? saturDatesTextStyle,
+    TextStyle? sunDatesTextStyle,
+    TextStyle? holiDatesTextStyle,
+    TextStyle? myholiDatesTextStyle,
     TextStyle? trailingDatesTextStyle,
     TextStyle? leadingDatesTextStyle,
     TextStyle? blackoutDatesTextStyle,
@@ -182,6 +190,10 @@ class SfCalendarThemeData with Diagnosticable {
         cellBorderColor: cellBorderColor,
         timeTextStyle: timeTextStyle,
         activeDatesTextStyle: activeDatesTextStyle,
+        saturDatesTextStyle: saturDatesTextStyle,
+        sunDatesTextStyle: sunDatesTextStyle,
+        holiDatesTextStyle: holiDatesTextStyle,
+        myholiDatesTextStyle: myholiDatesTextStyle,
         activeDatesBackgroundColor: activeDatesBackgroundColor,
         todayBackgroundColor: todayBackgroundColor,
         trailingDatesBackgroundColor: trailingDatesBackgroundColor,
@@ -433,6 +445,7 @@ class SfCalendarThemeData with Diagnosticable {
   /// ```
   final Color? activeDatesBackgroundColor;
 
+
   ///Specifies the background for the today month cell.
   ///
   /// ```dart
@@ -670,6 +683,10 @@ class SfCalendarThemeData with Diagnosticable {
   ///}
   /// ```
   final TextStyle? activeDatesTextStyle;
+  final TextStyle? saturDatesTextStyle;
+  final TextStyle? sunDatesTextStyle;
+  final TextStyle? holiDatesTextStyle;
+  final TextStyle? myholiDatesTextStyle;
 
   /// Specifies the text style for the trailing month cell dates.
   ///
@@ -798,6 +815,10 @@ class SfCalendarThemeData with Diagnosticable {
       TextStyle? agendaDateTextStyle,
       TextStyle? timeTextStyle,
       TextStyle? activeDatesTextStyle,
+        TextStyle? saturDatesTextStyle,
+        TextStyle? sunDatesTextStyle,
+        TextStyle? holiDatesTextStyle,
+        TextStyle? myholiDatesTextStyle,
       Color? activeDatesBackgroundColor,
       Color? todayBackgroundColor,
       Color? trailingDatesBackgroundColor,
@@ -831,6 +852,10 @@ class SfCalendarThemeData with Diagnosticable {
         agendaDateTextStyle: agendaDateTextStyle ?? this.agendaDateTextStyle,
         timeTextStyle: timeTextStyle ?? this.timeTextStyle,
         activeDatesTextStyle: activeDatesTextStyle ?? this.activeDatesTextStyle,
+        saturDatesTextStyle: saturDatesTextStyle ?? this.saturDatesTextStyle,
+        sunDatesTextStyle: sunDatesTextStyle ?? this.sunDatesTextStyle,
+        holiDatesTextStyle: holiDatesTextStyle ?? this.holiDatesTextStyle,
+        myholiDatesTextStyle: myholiDatesTextStyle ?? this.myholiDatesTextStyle,
         activeDatesBackgroundColor:
             activeDatesBackgroundColor ?? this.activeDatesBackgroundColor,
         todayBackgroundColor: todayBackgroundColor ?? this.todayBackgroundColor,
@@ -912,6 +937,10 @@ class SfCalendarThemeData with Diagnosticable {
         other.agendaDateTextStyle == agendaDateTextStyle &&
         other.timeTextStyle == timeTextStyle &&
         other.activeDatesTextStyle == activeDatesTextStyle &&
+        other.saturDatesTextStyle == saturDatesTextStyle &&
+        other.sunDatesTextStyle == sunDatesTextStyle &&
+        other.holiDatesTextStyle == holiDatesTextStyle &&
+        other.myholiDatesTextStyle == myholiDatesTextStyle &&
         other.activeDatesBackgroundColor == activeDatesBackgroundColor &&
         other.todayBackgroundColor == todayBackgroundColor &&
         other.trailingDatesBackgroundColor == trailingDatesBackgroundColor &&
@@ -943,6 +972,10 @@ class SfCalendarThemeData with Diagnosticable {
       agendaDateTextStyle,
       timeTextStyle,
       activeDatesTextStyle,
+      saturDatesTextStyle,
+      sunDatesTextStyle,
+      holiDatesTextStyle,
+      myholiDatesTextStyle,
       activeDatesBackgroundColor,
       todayBackgroundColor,
       trailingDatesBackgroundColor,
